@@ -706,6 +706,14 @@ Many file formats use XML as a base:
 1. **HTTP method switching** — Try `POST` instead of `GET`, or use method override headers (`X-HTTP-Method-Override`, `X-HTTP-Method`)
 2. **IP spoofing headers** — Use `X-Forwarded-For`, `X-Real-IP`, `X-Originating-IP` to forge source IP and bypass IP-based blocklists
 3. **URL manipulation** — Use path traversal (`/admin/../admin`), case modification, character insertion, or double URL-encoding
+4. **Requests Smuggling** — Bypass Reverse Proxy Protection Using Requests smuggling example : `info.php` return 403 Protected by Reverse Proxy .
+```
+GET / HTTP/1.1
+HOST : target.com
+
+GET /info.php HTTP/1.1
+HOST: target.com
+```
 
 ---
 
