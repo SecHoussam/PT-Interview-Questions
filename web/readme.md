@@ -333,7 +333,7 @@ Since WebSockets begin with an HTTP handshake, `Sec-WebSocket-Key` is used to **
 
 ## 17. CSRF Mitigation Techniques
 
-**Q:** Describe 3 ways to mitigate Cross-Site Request Forgery.
+**Q:** Describe 3 ways to mitigate Cross-Site Request Forgery 🛡️ .
 
 **A:**
 
@@ -343,7 +343,7 @@ Since WebSockets begin with an HTTP handshake, `Sec-WebSocket-Key` is used to **
 
 3. **Referer Header Validation** — Check that the `Referer` header matches a trusted origin before processing the request.
 
-. **An important point** — some middleware automatically protects CSRF, for example, in Golang fiber HTTP methods such as `POST` , `PUT`, and `DELETE` , If you use `PUTCH` , you can bypass these methods.
+⚠️ **An important point** — some middleware automatically protects CSRF, for example, in Golang fiber HTTP methods such as `POST` , `PUT`, and `DELETE` , If you use `PUTCH` , you can bypass these methods.
 
 ---
 
